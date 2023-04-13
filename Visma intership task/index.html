@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <button class="demo">Fill Demo Data</button>
+        </div>
+        <div class="header-container">
+            <h2>To Do Tasks</h2>
+        </div class="form-container">
+        <form action="">
+            <div class="description-container">
+                <label for="description">Description:</label>
+                <input type="text" id="description" required maxlength="160" placeholder="Task description">
+            </div>
+            <div class="deadline-container">
+                <label for="deadline-date">Deadline:</label>
+                <input type="datetime-local" id="deadline-date" placeholder="Deadline date">
+            </div>
+            <button type="submit" id="addTask">Add Task</button>
+        </form>
+        <div class="filter">
+            <h3>Filter by</h3>
+            <div>
+                <button class="deadline-filter btn">Deadline</button>
+                <button class="rec-completed btn">Recently completed</button>
+                <button class="default-filter btn">Default</button>
+            </div>
+        </div>
+        <div class="tasks-container">
+        </div>
+    </main>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
